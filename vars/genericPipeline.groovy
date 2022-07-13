@@ -18,7 +18,7 @@ def call() {
                             print 'password.collect { it }=' + password.collect { it }
                             environment = "test"
                             sh "echo 'Hello testing...'"
-                            sh "curl -XGET 127.0.0.1:9000/welcome"
+                            sh "curl -XGET 127.0.0.1:9000/genericPipeline"
                         }
                     }
                 }
